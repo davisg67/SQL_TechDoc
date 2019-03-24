@@ -1,0 +1,193 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ html {
+    scroll-behavior: smooth; 
+    height: 100%;
+  }
+
+body {
+    height: 100%;
+    overflow: hidden; 
+    display: flex; 
+    font-size: 16px;
+  }
+
+
+#page-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+
+.container {
+    overflow-y: auto;
+    padding: 30px;
+}
+
+#navbar {
+    font-family: 'Arimo', sans-serif;
+    background-color: #eeeeee;
+    border-right: 2px solid black;
+
+    width: 30%;
+    height: 100%;
+}
+
+#navbar a {
+    display:block;
+
+    text-decoration: none;
+    padding: .5em;
+    text-align: center; 
+    margin: 10px auto 10px auto;
+    background-color: #d9d9d9;
+    color: #000000;
+
+    /* Button Look */
+    border: 1px solid black;
+    border-radius: 15px 30px 30px 15px;
+    box-shadow: 0 4px 0 gray;
+
+    /* width: 220px; */
+    width: 90%;
+}
+
+#navbar a:hover {
+    background-color: #b3b3b3;
+    cursor: pointer;
+}
+
+#navbar a:active {
+    /* Click button effect */
+    position: relative;
+    box-shadow: none;
+    top: 10px; 
+}
+
+ #navbar ul {
+    list-style: none;
+}
+
+header {
+    color:black;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align:center;
+    font-size:1.8em;
+    font-weight:thin;
+    /* width: 250px; */
+    width: 100%;
+}
+
+  .fa-database {
+      color: orange;
+  }
+
+
+
+#main-doc {
+    font-family: 'Raleway', sans-serif;
+    background-color: #ffffff;  
+
+    width: 70%;
+    height: 100%;
+}
+
+.main-section {
+    margin-bottom: 4em;
+}
+
+.main-section header {
+    text-align:left;
+    margin:0px;
+    padding-top: 30px;
+    font-weight: bold;
+}
+
+.main-section article {
+    margin: 1em;
+    font-size:0.96em;
+}
+
+article p {
+    margin-bottom: 20px;
+}
+
+article h3 {
+    margin-bottom: 20px;
+    font-weight: thin;
+}
+
+article ul {
+    margin-left: 2em;
+}
+
+article li {
+    margin-bottom: 1em;
+}
+
+code {
+    display: block;  
+    text-align: left;
+    white-space: pre; 
+    word-break: normal;
+    word-wrap: normal;  
+    line-height: 2;
+    background-color:#f7f7f7;
+    padding:15px;
+    margin:10px;
+    border-radius:5px;
+}
+
+#Conclusion {
+    height: 630px;
+}
+
+
+
+
+
+@media all and (max-width: 900px) {
+    body {
+        font-size: 12px;
+    } 
+
+    #navbar {
+        width: 100%;
+        height: 30%;
+        
+   }
+
+   #main-doc {
+        width: 100%;
+        height: 70%; 
+   }
+
+   #navbar a {
+        margin: 10px auto 10px auto;
+   }
+
+   /* .container {
+        overflow-x: auto;
+   }  */
+
+   
+}
+
+@media all and (max-width: 500px) {
+    body {
+        font-size: 6px;
+    } 
+}
+
+
+
+
+
+
+
